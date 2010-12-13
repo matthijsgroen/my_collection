@@ -1,0 +1,11 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  title: MyString
+  imdb_id: MyString
+  released_on: 2010-11-29
+
+two:
+  title: MyString
+  imdb_id: MyString
+  released_on: 2010-11-29

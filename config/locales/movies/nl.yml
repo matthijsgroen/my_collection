@@ -1,0 +1,18 @@
+nl:
+  movies:
+    index: "Film overzicht"
+
+  activerecord:
+    models:
+      movie:
+        one: "Film"
+        other: "Films"
+    attributes:
+      movie:
+        title: "Titel"
+
+  formtastic:
+    hints:
+      movie:
+        title: "Kies een goede naam"
+

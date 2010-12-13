@@ -1,0 +1,7 @@
+%tr[movie]
+  %td= movie.title
+  %td= movie.imdb_id
+  %td= movie.released_on
+  %td= link_to 'Show', movie
+  %td= link_to 'Edit', edit_movie_path(movie)
+  %td= link_to 'Destroy', movie, :confirm => 'Are you sure?', :method => :delete

@@ -1,0 +1,15 @@
+%h1= t 'movies.index'
+%table
+  %tr
+    %th= Movie.human_attribute_name :title
+    %th Imdb
+    %th Released on
+    %th
+    %th
+    %th
+
+  = render @movies
+
+%br
+
+= link_to 'New Movie', new_movie_path

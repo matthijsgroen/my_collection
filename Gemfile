@@ -7,6 +7,11 @@ gem 'rails', '3.0.3'
 
 gem 'sqlite3-ruby', :require => 'sqlite3'
 
+gem 'inherited_resources'
+gem 'has_scope'
+gem 'haml'
+gem 'formtastic'
+
 # Use unicorn as the web server
 # gem 'unicorn'
 
@@ -29,3 +34,32 @@ gem 'sqlite3-ruby', :require => 'sqlite3'
 # group :development, :test do
 #   gem 'webrat'
 # end
+
+group :test, :development do
+  gem "rspec-rails", ">= 2.0.0.beta.22"
+end
+
+group :test do
+  gem "autotest"
+  gem "autotest-rails"
+
+  gem 'capybara', "0.3.9"
+  gem 'database_cleaner'
+  gem 'cucumber-rails'
+  gem 'cucumber', "0.9.2"
+  gem 'spork'
+
+  gem "rcov"
+  gem "capybara-envjs"
+  gem "launchy"
+
+#  gem "rspec-rails",      ">= 2.0.0.beta"
+#  gem "machinist",        :git => "git://github.com/notahat/machinist.git"
+#  gem "faker"
+#  gem "ZenTest"
+#  gem "cucumber",         :git => "git://github.com/aslakhellesoy/cucumber.git"
+#  gem "database_cleaner", :git => 'git://github.com/bmabey/database_cleaner.git'
+#  gem "cucumber-rails",   :git => "git://github.com/aslakhellesoy/cucumber-rails.git"
+#  gem "capybara"
+#  gem "ruby-debug"
+end
